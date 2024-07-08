@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../all.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#feature">feature</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#footer">footer</a></li>
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+    
+        <div class="logo">
+            <a href="#"><h1><span>fit</span>ness</h1></a>
+        </div>
+    </header>
+
+    <script>
+        $(document).ready(function(){
+            $('.fa-bars').click(function(){
+                 $(this).toggleClass('fa-times');
+                 $('nav').toggleClass('nav-toggle');
+            });
+
+            $('nav ul li a').click(function(){
+                $('.fabars').removeClass('fa-times');
+                $('nav').removeClass('nav-toggle');
+            });
+        });
+    </script>
+</body>
+</html>
